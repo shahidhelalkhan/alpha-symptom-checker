@@ -11,7 +11,9 @@ import { getToken } from "../api/auth";
 
 const HomeComponent = ({ token, navigation }) => {
   const [loading, SetLoading] = useState(false);
+  const [age, setAge] = useState(0);
   const handleContinueBtn = () => {
+    localStorage.setItem("age", age);
     navigation.navigate("symptoms", { token: token });
   };
   return (
@@ -27,7 +29,7 @@ const HomeComponent = ({ token, navigation }) => {
       <TextInput
         placeholder="Age"
         style={{ padding: 10, borderBottomWidth: 1, borderBottomColor: "red" }}
-        onChangeText={(value) => console.log(value)}
+        onChangeText={(value) => setAge(value)}
       ></TextInput>
       <TouchableOpacity
         onPress={handleContinueBtn}

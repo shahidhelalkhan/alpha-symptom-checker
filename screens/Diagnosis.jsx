@@ -9,6 +9,8 @@ function Diagnosis(props) {
   const [diagnosis, setDiagnosis] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
+    const age = localStorage.getItem("age");
+    console.log(age);
     Request.getDiagnosis(token, { symptoms, year: "1992" })
       .then((res) => {
         setLoading(false);
