@@ -28,7 +28,7 @@ function RootNavigator() {
       <Stack.Screen
         name="diagnosis"
         component={Diagnosis}
-        options={{ title: "Welcome" }}
+        options={{ title: "Diagnosis" }}
       />
     </Stack.Navigator>
   );

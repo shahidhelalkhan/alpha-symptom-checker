@@ -31,8 +31,6 @@ const searchBar = () => {
 const FlatListItemSeparator = () => <View style={styles.line} />;
 
 function Symptoms(props) {
-  console.log(props);
-
   const [loading, SetLoading] = useState(true);
   const [loader, setLoader] = useState(false);
   const [token, SetToken] = useState(props.route.params.token);
@@ -45,11 +43,9 @@ function Symptoms(props) {
     });
   }, []);
   const selectItem = (i, selected) => {
-    console.log(i);
-    const tatti = [...data];
-    tatti[i].selected = !selected;
-    console.log(typeof tatti);
-    SetData(tatti);
+    const modifiedData = [...data];
+    modifiedData[i].selected = !selected;
+    SetData(modifiedData);
   };
 
   const goToDiagnosis = () => {
@@ -59,7 +55,10 @@ function Symptoms(props) {
         symptomArray.push(obj);
       }
     });
-    props.navigation.navigate("diagnosis", { symptoms: symptomArray });
+    props.navigation.navigate("diagnosis", {
+      symptoms: symptomArray,
+      token: token,
+    });
   };
 
   const renderItem = ({ item, index }) => {

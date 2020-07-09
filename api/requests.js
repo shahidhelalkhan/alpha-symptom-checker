@@ -11,6 +11,18 @@ const Request = {
       }
     ).then((res) => res.json());
   },
+  getDiagnosis(token, { symptoms, year }) {
+    return fetch(
+      `${ApiMedicHost}/diagnosis?symptoms=[${symptoms
+        .map((s) => s.ID)
+        .join(
+          ","
+        )}]&language=${lang}&format=${format}&token=${token}&gender=male&year_of_birth=${year}`,
+      {
+        method: "GET",
+      }
+    ).then((res) => res.json());
+  },
 };
 
 export default Request;
