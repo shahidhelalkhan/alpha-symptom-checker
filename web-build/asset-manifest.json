@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/static/js/app.ed0e2409.chunk.js",
-    "app.js.map": "/static/js/app.ed0e2409.chunk.js.map",
-    "runtime~app.js": "/static/js/runtime~app.4b0f5a04.js",
-    "runtime~app.js.map": "/static/js/runtime~app.4b0f5a04.js.map",
-    "static/js/2.05f2925d.chunk.js": "/static/js/2.05f2925d.chunk.js",
-    "static/js/2.05f2925d.chunk.js.map": "/static/js/2.05f2925d.chunk.js.map",
+    "app.js": "/static/js/app.667c05fc.chunk.js",
+    "app.js.map": "/static/js/app.667c05fc.chunk.js.map",
+    "runtime~app.js": "/static/js/runtime~app.2e9f1821.js",
+    "runtime~app.js.map": "/static/js/runtime~app.2e9f1821.js.map",
+    "static/js/2.bb9834a3.chunk.js": "/static/js/2.bb9834a3.chunk.js",
+    "static/js/2.bb9834a3.chunk.js.map": "/static/js/2.bb9834a3.chunk.js.map",
     "fonts/AntDesign.ttf": "/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/./fonts/Feather.ttf",
@@ -24,14 +24,15 @@
     "index.html": "/index.html",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "static/media/bell.png": "/static/media/bell.a7b9dc9d.png",
-    "static/media/heart.png": "/static/media/heart.2327736b.png",
-    "static/media/rocket.png": "/static/media/rocket.51671417.png",
-    "static/media/star.png": "/static/media/star.004c2bbb.png"
+    "static/js/2.bb9834a3.chunk.js.LICENSE.txt": "/static/js/2.bb9834a3.chunk.js.LICENSE.txt",
+    "static/media/bell.png": "/static/media/bell.cf04af27.png",
+    "static/media/heart.png": "/static/media/heart.23b5c2c0.png",
+    "static/media/rocket.png": "/static/media/rocket.d2f3bf41.png",
+    "static/media/star.png": "/static/media/star.69c71386.png"
   },
   "entrypoints": [
-    "static/js/runtime~app.4b0f5a04.js",
-    "static/js/2.05f2925d.chunk.js",
-    "static/js/app.ed0e2409.chunk.js"
+    "static/js/runtime~app.2e9f1821.js",
+    "static/js/2.bb9834a3.chunk.js",
+    "static/js/app.667c05fc.chunk.js"
   ]
 }
